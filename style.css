@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background-color: #0b7285;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e5f6f8;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #075e6b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b7285;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #075e6b;
+}
+
+.full-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Features */
+
+.features,
+.specialties {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.features h2,
+.specialties h2 {
+    color: #075e6b;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.feature-container,
+.specialty-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 280px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    color: #0b7285;
+    margin-bottom: 10px;
+}
+
+.specialties {
+    background-color: white;
+}
+
+.specialty-card {
+    width: 210px;
+    padding: 20px;
+    background-color: #f1fafb;
+    border: 1px solid #d5e7ea;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Forms */
+
+.form-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    color: #075e6b;
+    margin-bottom: 8px;
+}
+
+.form-container > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd9dc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    outline: none;
+    border-color: #0b7285;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #0b7285;
+    font-weight: bold;
+}
+
+/* Doctor Catalogue */
+
+.catalog-page {
+    min-height: 80vh;
+    padding: 50px 8%;
+}
+
+.catalog-page h1 {
+    text-align: center;
+    color: #075e6b;
+    font-size: 38px;
+}
+
+.page-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-area {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.search-area input,
+.search-area select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccd9dc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.doctor-card {
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-card h2 {
+    color: #075e6b;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.doctor-card .specialization {
+    color: #0b7285;
+    font-weight: bold;
+}
+
+.doctor-card .experience {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.doctor-card .btn {
+    margin-top: 15px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #777;
+}
+
+/* Footer */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #075e6b;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .feature-container,
+    .specialty-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card,
+    .specialty-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
