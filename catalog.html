@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - CareConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">CareConnect</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Doctors</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main class="catalog-page">
+
+    <h1>Available Doctors</h1>
+
+    <p class="page-description">
+        Search and select a doctor for your appointment.
+    </p>
+
+    <div class="search-area">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search doctor or specialization"
+            onkeyup="searchDoctors()"
+        >
+
+        <select
+            id="specializationFilter"
+            onchange="searchDoctors()"
+        >
+            <option value="all">All Specializations</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Dentistry">Dentistry</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="General Medicine">General Medicine</option>
+            <option value="Ophthalmology">Ophthalmology</option>
+        </select>
+
+    </div>
+
+    <div
+        id="doctorContainer"
+        class="doctor-container">
+    </div>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2026 CareConnect - Online Doctor Appointment System
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
